@@ -1,0 +1,10 @@
+[DockerMetrics]
+type = "ProcessInput"
+ticker_interval = 2
+stdout = true
+stderr = false
+
+	[DockerMetrics.command.0]
+	bin = "/usr/bin/python"
+	args = ["/usr/share/heka/scripts/container_dets.py", "0", "all"]
+

@@ -1,0 +1,7 @@
+[ProtobufEncoder]
+
+[aggregator_output]
+type = "TcpOutput"
+address = "172.31.1.252:5565"
+#message_matcher = "Type != 'logfile' && Type != 'heka.counter-output' && Type != 'heka.all-report'"
+message_matcher = "TRUE"

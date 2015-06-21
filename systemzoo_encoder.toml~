@@ -1,0 +1,18 @@
+[DockerLogInput]
+decoder = "systemzoo_decoder"
+
+[systemzoo_decoder]
+type = "SandboxDecoder"
+filename = "lua_decoders/systemzoo_decoder.lua"
+
+[systemzoo_decoder.config]
+type = "systemzoo.log"
+
+[systemzoo_decoder]                                                                    
+type = "SandboxEncoder"                                                                
+filename = "lua_decoders/systemzoo.lua"                                         
+ticker_interval = 1                                                                    
+preserve_data = true                                                                   
+                                                                                       
+[systemzoo_encoder.config]                                                             
+type = "systemzoo.log"
